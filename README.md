@@ -1,31 +1,32 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<!-- badges: start -->
+
 [![Travis build
-status](https://travis-ci.org/ddsjoberg/clintable.svg?branch=master)](https://travis-ci.org/ddsjoberg/clintable)
+status](https://travis-ci.org/ddsjoberg/gtsummary-v0.1.svg?branch=master)](https://travis-ci.org/ddsjoberg/gtsummary-v0.1)
 [![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/ddsjoberg/clintable?branch=master&svg=true)](https://ci.appveyor.com/project/ddsjoberg/clintable)
+status](https://ci.appveyor.com/api/projects/status/github/ddsjoberg/gtsummary-v0-1?branch=master&svg=true)](https://ci.appveyor.com/project/ddsjoberg/gtsummary-v0-1)
 [![Coverage
-status](https://codecov.io/gh/ddsjoberg/clintable/branch/master/graph/badge.svg)](https://codecov.io/github/ddsjoberg/clintable?branch=master)  
+status](https://codecov.io/gh/ddsjoberg/gtsummary-v0.1/branch/master/graph/badge.svg)](https://codecov.io/github/ddsjoberg/gtsummary-v0.1?branch=master)  
 A collection of functions commonly used in the work of the
 biostatisticians. The goal of **gtsummary** is to make reporting of
 tabular analytic results simple, beautiful, and reproducible.  
-<!-- Update the list of contributors from the git shell `git shortlog -s -n` -->
+<!-- badges: end -->
 
 ## Installation
 
 You can install the production version of **gtsummary** with:
 
 ``` r
-install.packages("remotes")
-remotes::install_url("https://github.com/ddsjoberg/clintable/archive/master.zip")
+install.packages("gtsummary")
 ```
 
 and the development version with:
 
 ``` r
 install.packages("remotes")
-remotes::install_url("https://github.com/ddsjoberg/clintable/archive/dev.zip")
+remotes::install_url("https://github.com/ddsjoberg/gtsummary-v0.1/archive/master.zip")
 ```
 
 ## Examples

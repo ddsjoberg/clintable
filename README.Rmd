@@ -13,10 +13,12 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Travis build status](https://travis-ci.org/ddsjoberg/clintable.svg?branch=master)](https://travis-ci.org/ddsjoberg/clintable)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ddsjoberg/clintable?branch=master&svg=true)](https://ci.appveyor.com/project/ddsjoberg/clintable)
-[![Coverage status](https://codecov.io/gh/ddsjoberg/clintable/branch/master/graph/badge.svg)](https://codecov.io/github/ddsjoberg/clintable?branch=master)  
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/ddsjoberg/gtsummary-v0.1.svg?branch=master)](https://travis-ci.org/ddsjoberg/gtsummary-v0.1)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ddsjoberg/gtsummary-v0-1?branch=master&svg=true)](https://ci.appveyor.com/project/ddsjoberg/gtsummary-v0-1)
+[![Coverage status](https://codecov.io/gh/ddsjoberg/gtsummary-v0.1/branch/master/graph/badge.svg)](https://codecov.io/github/ddsjoberg/gtsummary-v0.1?branch=master)  
 A collection of functions commonly used in the work of the biostatisticians. The goal of **gtsummary** is to make reporting of tabular analytic results simple, beautiful, and reproducible.  
+<!-- badges: end -->
 
 ## Installation
 
@@ -30,7 +32,7 @@ and the development version with:
 
 ``` r
 install.packages("remotes")
-remotes::install_url("https://github.com/ddsjoberg/clintable/archive/master.zip")
+remotes::install_url("https://github.com/ddsjoberg/gtsummary-v0.1/archive/master.zip")
 ```
 
 ## Examples
