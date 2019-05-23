@@ -5,6 +5,6 @@ articles:
   fmt_regression: fmt_regression.html
   fmt_table1: fmt_table1.html
 urls:
-  reference: https://github.com/ddsjoberg/clintable/reference
-  article: https://github.com/ddsjoberg/clintable/articles
+  reference: https://github.com/ddsjoberg/gtsummary-v0.1/reference
+  article: https://github.com/ddsjoberg/gtsummary-v0.1/articles
 

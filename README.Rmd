@@ -37,7 +37,7 @@ remotes::install_url("https://github.com/ddsjoberg/gtsummary-v0.1/archive/master
 
 ## Examples
 
-The vignettes/tutorials for the primary **gtsummary** functions have detailed examples and can be found at [danieldsjoberg.com/clintable](http://www.danieldsjoberg.com/clintable).  Each vignette is an Rmarkdown file (*.Rmd) and a copy of the files can be found here: [https://github.com/ddsjoberg/clintable/tree/master/vignettes](https://github.com/ddsjoberg/clintable/tree/master/vignettes).  
+The vignettes/tutorials for the primary **gtsummary** functions have detailed examples and can be found at [danieldsjoberg.com/gtsummary-v0.1](http://www.danieldsjoberg.com/gtsummary-v0.1).  Each vignette is an Rmarkdown file (*.Rmd) and a copy of the files can be found here: [https://github.com/ddsjoberg/gtsummary-v0.1/tree/master/vignettes](https://github.com/ddsjoberg/gtsummary-v0.1/tree/master/vignettes).  
 
 ### Table 1
 

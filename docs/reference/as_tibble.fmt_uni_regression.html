@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">gtsummary</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -100,7 +100,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/ddsjoberg/clintable">
+  <a href="https://github.com/ddsjoberg/gtsummary-v0.1">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -157,6 +157,31 @@
 <code><a href='as_tibble.fmt_regression.html'>as_tibble.fmt_regression</a></code>, <code><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></code></p></div>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='fmt_uni_regression.html'>fmt_uni_regression</a></span>(
+  <span class='no'>trial</span>,
+  <span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"glm"</span>,
+  <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"response"</span>,
+  <span class='kw'>method.args</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='kw'>family</span> <span class='kw'>=</span> <span class='no'>binomial</span>),
+  <span class='kw'>exponentiate</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>
+) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='as_tibble.html'>as_tibble</a></span>()</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 14 x 5</span><span>
+#&gt;    Variable                N     OR    `95% CI`   `p-value`
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>                   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>    
+#&gt; </span><span style='color: #555555;'> 1</span><span> Treatment Randomization 191   </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>        </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>      
+#&gt; </span><span style='color: #555555;'> 2</span><span> Drug                    </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   Ref.  </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>        </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>      
+#&gt; </span><span style='color: #555555;'> 3</span><span> Placebo                 </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   0.47  0.26, 0.84 0.012    
+#&gt; </span><span style='color: #555555;'> 4</span><span> Age, yrs                183   1.00  0.98, 1.02 &gt;0.9     
+#&gt; </span><span style='color: #555555;'> 5</span><span> Marker Level, ng/mL     183   0.92  0.65, 1.30 0.6      
+#&gt; </span><span style='color: #555555;'> 6</span><span> T Stage                 191   </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>        </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>      
+#&gt; </span><span style='color: #555555;'> 7</span><span> T1                      </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   Ref.  </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>        </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>      
+#&gt; </span><span style='color: #555555;'> 8</span><span> T2                      </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   1.40  0.63, 3.14 0.4      
+#&gt; </span><span style='color: #555555;'> 9</span><span> T3                      </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   0.63  0.26, 1.50 0.3      
+#&gt; </span><span style='color: #555555;'>10</span><span> T4                      </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   0.50  0.22, 1.11 0.089    
+#&gt; </span><span style='color: #555555;'>11</span><span> Grade                   191   </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>        </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>      
+#&gt; </span><span style='color: #555555;'>12</span><span> I                       </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   Ref.  </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>        </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>      
+#&gt; </span><span style='color: #555555;'>13</span><span> II                      </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   0.60  0.29, 1.25 0.2      
+#&gt; </span><span style='color: #555555;'>14</span><span> III                     </span><span style='color: #555555;'>"</span><span> </span><span style='color: #555555;'>"</span><span>   0.76  0.38, 1.51 0.4      </div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -166,14 +191,16 @@
       <li><a href="#details">Details</a></li>
 
       <li><a href="#see-also">See also</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Daniel D. Sjoberg.</p>
+  <p>Developed by Daniel D. Sjoberg, Emily C. Zabor.</p>
 </div>
 
 <div class="pkgdown">

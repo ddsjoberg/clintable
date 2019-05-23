@@ -66,7 +66,7 @@ fmt_regression objects in Rmarkdown" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">gtsummary</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -103,7 +103,7 @@ fmt_regression objects in Rmarkdown" />
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/ddsjoberg/clintable">
+  <a href="https://github.com/ddsjoberg/gtsummary-v0.1">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -151,22 +151,20 @@ fmt_regression objects in Rmarkdown" />
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>lme4</span>)
-<span class='no'>uni_mod</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='fmt_uni_regression.html'>fmt_uni_regression</a></span>(<span class='no'>trial</span>,
-  <span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"glm"</span>,
-  <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"response"</span>,
-  <span class='kw'>method.args</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='kw'>family</span> <span class='kw'>=</span> <span class='no'>binomial</span>),
-  <span class='kw'>exponentiate</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>
-)
+    <pre class="examples"><div class='input'>  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>lme4</span>)
+  <span class='no'>uni_mod</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='fmt_uni_regression.html'>fmt_uni_regression</a></span>(<span class='no'>trial</span>,
+    <span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"glm"</span>,
+    <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"response"</span>,
+    <span class='kw'>method.args</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='kw'>family</span> <span class='kw'>=</span> <span class='no'>binomial</span>),
+    <span class='kw'>exponentiate</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>
+  )
 
-<span class='co'># In RMarkdown, knitting to HTML:</span>
-<span class='fu'>kable</span>(<span class='fu'><a href='as_tibble.html'>as_tibble</a></span>(<span class='no'>uni_mod</span>),
-  <span class='kw'>row.names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
-  <span class='kw'>caption</span> <span class='kw'>=</span> <span class='st'>"Model Summary"</span>
-) <span class='kw'>%&gt;%</span>
-  <span class='kw pkg'>kableExtra</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/kableExtra/topics/add_indent'>add_indent</a></span>(<span class='fu'><a href='indent_key.html'>indent_key</a></span>(<span class='no'>uni_mod</span>))
-<span class='co'># }</span><div class='input'>
+  <span class='co'># In RMarkdown, knitting to HTML:</span>
+  <span class='fu'>kable</span>(<span class='fu'><a href='as_tibble.html'>as_tibble</a></span>(<span class='no'>uni_mod</span>),
+    <span class='kw'>row.names</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+    <span class='kw'>caption</span> <span class='kw'>=</span> <span class='st'>"Model Summary"</span>
+  ) <span class='kw'>%&gt;%</span>
+    <span class='kw pkg'>kableExtra</span><span class='kw ns'>::</span><span class='fu'><a href='https://www.rdocumentation.org/packages/kableExtra/topics/add_indent'>add_indent</a></span>(<span class='fu'><a href='indent_key.html'>indent_key</a></span>(<span class='no'>uni_mod</span>))</div><div class='output co'>#&gt; <span class='error'>Error in kable(as_tibble(uni_mod), row.names = FALSE, caption = "Model Summary"): could not find function "kable"</span></div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -182,7 +180,7 @@ fmt_regression objects in Rmarkdown" />
 
       <footer>
       <div class="copyright">
-  <p>Developed by Daniel D. Sjoberg.</p>
+  <p>Developed by Daniel D. Sjoberg, Emily C. Zabor.</p>
 </div>
 
 <div class="pkgdown">

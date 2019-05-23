@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">gtsummary</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -100,7 +100,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/ddsjoberg/clintable">
+  <a href="https://github.com/ddsjoberg/gtsummary-v0.1">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -150,19 +150,45 @@
     </table>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='fmt_uni_regression.html'>fmt_uni_regression</a></span>(
+  <span class='no'>trial</span>,
+  <span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"glm"</span>,
+  <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"response"</span>,
+  <span class='kw'>method.args</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='kw'>family</span> <span class='kw'>=</span> <span class='no'>binomial</span>),
+  <span class='kw'>exponentiate</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>
+) <span class='kw'>%&gt;%</span>
+  <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>()</div><div class='output co'>#&gt; 
+#&gt; Variable                N                       OR                      95% CI                  p-value                
+#&gt; Treatment Randomization 191                                                                                            
+#&gt; Drug                                            Ref.                                                                   
+#&gt; Placebo                                         0.47                    0.26, 0.84              0.012                  
+#&gt; Age, yrs                183                     1.00                    0.98, 1.02              &gt;0.9                   
+#&gt; Marker Level, ng/mL     183                     0.92                    0.65, 1.30              0.6                    
+#&gt; T Stage                 191                                                                                            
+#&gt; T1                                              Ref.                                                                   
+#&gt; T2                                              1.40                    0.63, 3.14              0.4                    
+#&gt; T3                                              0.63                    0.26, 1.50              0.3                    
+#&gt; T4                                              0.50                    0.22, 1.11              0.089                  
+#&gt; Grade                   191                                                                                            
+#&gt; I                                               Ref.                                                                   
+#&gt; II                                              0.60                    0.29, 1.25              0.2                    
+#&gt; III                                             0.76                    0.38, 1.51              0.4                    </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-                </ul>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Daniel D. Sjoberg.</p>
+  <p>Developed by Daniel D. Sjoberg, Emily C. Zabor.</p>
 </div>
 
 <div class="pkgdown">
